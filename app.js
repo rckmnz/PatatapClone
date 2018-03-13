@@ -1,8 +1,6 @@
 const
     express = require("express"),
-    circles = require("./circles")
-
-const app = express();
+    app = express();
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
