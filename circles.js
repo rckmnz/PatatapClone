@@ -1,4 +1,10 @@
-let keyData = {
+const
+    howler = require("howler"),
+    paper = require("paper")
+
+var exports = module.exports = {};
+
+exports.keyData = {
     q: {
         sound: new Howl({
             src: ['sounds/bubbles.mp3']
@@ -158,9 +164,9 @@ let keyData = {
 }
 
 
-let circles = [];
+exports.circles = [];
 
-function onKeyDown(event) {
+exports.onKeyDown = function(event) {
     if (keyData[event.key]) {
         var maxPoint = new Point(view.size.width, view.size.height);
         var randomPoint = Point.random();
@@ -174,7 +180,7 @@ function onKeyDown(event) {
     }
 }
 
-function onFrame(event) {
+exports.onFrame = function(event) {
     for (var i = 0; i < circles.length; i++) {
         circles[i].scale(0.9);
         circles[i].fillColor.hue += 1;
