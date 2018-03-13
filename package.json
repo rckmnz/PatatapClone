@@ -1,0 +1,25 @@
+{
+  "name": "patatapclone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rckmnz/PatatapClone.git"
+  },
+  "author": "Erick Munoz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rckmnz/PatatapClone/issues"
+  },
+  "homepage": "https://github.com/rckmnz/PatatapClone#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.3",
+    "howler": "^2.0.9",
+    "paper": "^0.11.5"
+  }
+}
